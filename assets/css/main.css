@@ -1,0 +1,194 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* GENRAL STYLES */
+:root {
+  --font: "Poppins", sans-serif;
+  --MainColor: #f5a962;
+  --neutralColor: #fff;
+  --primaryColor: #5c6161;
+  --headingWeight: 700;
+  --bodyTextWeight: 400;
+}
+
+/* HEADER STYLES */
+header {
+  font-family: var(--font);
+  font-weight: var(--bodyTextWeight);
+  background-color: rgba(245, 169, 98, 0.11);
+}
+nav {
+  background-color: var(--MainColor);
+}
+
+.menu-hide {
+  display: none !important;
+  color: var(--neutralColor);
+}
+@media only screen and (max-width: 414px) {
+  .menu-hide {
+    display: inline-block !important;
+  }
+  .opening-hours {
+    display: none !important;
+  }
+}
+
+/* HERO STYLES */
+.hero {
+  font-family: var(--font);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.411)),
+    url("../images/profithero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+}
+
+@media only screen and (max-width: 414px) {
+  .hero {
+    background-position: center center;
+    height: 60vh;
+  }
+}
+
+/* BENEFITS STYLES */
+.gain i {
+  font-size: 50px;
+}
+.benefit {
+  font-family: var(--font);
+  background-color: var(--MainColor);
+  padding: 3%;
+}
+.benefit-one {
+  font-family: var(--font);
+  background-color: rgba(245, 169, 98, 0.11);
+  padding: 3%;
+}
+
+@media only screen and (max-width: 414px) {
+  .benefit p,
+  .benefit-one p {
+    text-align: center;
+  }
+  .benefit h5,
+  .benefit-one h5 {
+    text-align: center;
+  }
+}
+
+/* ABOUT US STYLES */
+.about {
+  font-family: var(--font);
+  margin-top: 7%;
+}
+.about-icon {
+  font-size: 18em;
+}
+@media only screen and (max-width: 414px) {
+  .about {
+    font-family: var(--font);
+    margin-top: 2%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-icon {
+    display: none;
+  }
+}
+.aboutUs h5 {
+  color: var(--MainColor);
+}
+.aboutUs a {
+  color: var(--neutralColor);
+  background-color: var(--MainColor);
+}
+
+/* GET STARTED STYLES */
+.get-started {
+  font-family: var(--font);
+  margin-top: 7%;
+}
+
+.steps {
+  background-color: var(--MainColor);
+  color: var(--neutralColor);
+}
+.steps-one {
+  background-color: rgba(245, 169, 98, 0.11);
+}
+
+.get-started span {
+  background-color: var(--neutralColor);
+  color: var(--MainColor);
+  text-align: center;
+  margin-top: 3%;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+/* NEED HELP STYLES */
+.help {
+  font-family: var(--font);
+  margin-top: 7%;
+}
+.help h6 {
+  color: var(--MainColor);
+}
+
+.help .accordion {
+  margin-top: 7%;
+}
+@media only screen and (max-width: 768px) {
+  .help .accordion {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+
+/* FOOTER STYLES */
+footer {
+  font-family: var(--font);
+  margin-top: 7%;
+  background-color: var(--MainColor);
+  color: #000000;
+  padding: 3%;
+}
+
+footer h5::after {
+  content: " ";
+  background-color: #000000;
+  display: block;
+  height: 2px;
+  width: 60px;
+}
+
+footer p {
+  color: var(--neutralColor);
+}
+footer p span i {
+  color: var(--neutralColor);
+}
+footer p span {
+  color: #000000;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover {
+  color: var(--neutralColor);
+}
+
+@media only screen and (max-width: 414px) {
+  .copy-right {
+    text-align: center;
+  }
+  footer {
+    padding: 5%;
+  }
+}
